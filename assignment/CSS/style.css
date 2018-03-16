@@ -1,0 +1,95 @@
+h1{
+  background-color:#95BDB8;
+  color: #FFFFFF;
+  padding: 18px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  font-family: "Avenir";
+  font-size: 40px;
+}
+
+h2{
+  color: #515A5A;
+  padding: 18px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-family: "Avenir";
+  font-size: 24px;
+}
+
+p{
+  color:#515A5A;
+  font-family: "Avenir";
+  font-size: 14px;
+  margin-left: 18px;
+  margin-top:-10px;
+}
+
+#year-selection{
+  font-family: "Avenir";
+  font-size: 20px;
+  padding: 18px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 18px;
+  color:#515A5A;
+  background: #FFFFFF;
+  border-color: #A6ACAF;
+}
+
+#year-selection-choice{
+  font-family: "Avenir";
+  font-size: 16px;
+  margin-left: 12px;
+  color:#515A5A;
+  background: #FFFFFF;
+  border-color: #A6ACAF;
+}
+
+#province-selection{
+  font-family: "Avenir";
+  font-size: 20px;
+  padding: 18px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 18px;
+  color:#515A5A;
+  background: #FFFFFF;
+  border-color: #A6ACAF;
+}
+
+#province-selection-choice{
+  font-family: "Avenir";
+  font-size: 16px;
+  margin-left: 12px;
+  color:#515A5A;
+  background: #FFFFFF;
+  border-color: #A6ACAF;
+}
+
+.number-text{
+  font-family: "Avenir";
+  font-size: 14px;
+  margin-left: 12px;
+  color:#515A5A;
+  position:relative;
+  left:50%;
+}
+
+.prev1{
+  font-family: "Avenir";
+  font-size: 16px;
+  margin-left: 12px;
+  color:#CCD1D1;
+  position:relative;
+  left:40%;
+}
+
+.next1{
+  font-family: "Avenir";
+  font-size: 16px;
+  margin-left: 12px;
+  color:#515A5A;
+  position:relative;
+  left:50%;
+}

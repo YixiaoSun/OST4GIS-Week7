@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <body>
+
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <div class="slides-container">
+
+      <div class="slide1">
+          <div class="sidebar">
+            <div id="title">
+              <h1>HEPATITIS A MORBIDITY OF PROVINCES IN CHINA</h1>
+            </div>
+          <div id="year">
+            <h2>By Year</h2>
+            <select id="year-selection">
+              <option value="2016">2016</option>
+              <option value="2015"> 2015 </option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+            </select>
+            <button id="year-selection-choice">Show Data</button>
+          </div>
+          <div id="province">
+            <h2>By Province</h2>
+            <select id="province-selection">
+              <option value="Beijing">Beijing</option>
+              <option value="Tianjin">Tianjin</option>
+              <option value="Hebei">Hebei</option>
+              <option value="Shanxi">Shanxi</option>
+              <option value="Neimenggu">Neimenggu</option>
+              <option value="Liaoning">Liaoning</option>
+              <option value="Jilin">Jilin</option>
+              <option value="Heilongjiang">Heilongjiang</option>
+              <option value="Shanghai">Shanghai</option>
+              <option value="Jiangsu">Jiangsu</option>
+              <option value="Zhejiang">Zhejiang</option>
+              <option value="Anhui">Anhui</option>
+              <option value="Fujian">Fujian</option>
+              <option value="Jiangxi">Jiangxi</option>
+              <option value="Shandong">Shandong</option>
+              <option value="Henan">Henan</option>
+              <option value="Hubei">Hubei</option>
+              <option value="Hunan">Hunan</option>
+              <option value="Guangdong">Guangdong</option>
+              <option value="Guangxi">Guangxi</option>
+              <option value="Hainan">Hainan</option>
+              <option value="Chongqing">Chongqing</option>
+              <option value="Sichuan">Sichuan</option>
+              <option value="Guizhou">Guizhou</option>
+              <option value="Yunnan">Yunnan</option>
+              <option value="Xizang">Xizang</option>
+              <option value="Shaanxi">Shaanxi</option>
+              <option value="Gansu">Gansu</option>
+              <option value="Qinghai">Qinghai</option>
+              <option value="Ningxia">Ningxia</option>
+              <option value="Xinjiang">Xinjiang</option>
+            </select>
+            <button id="province-selection-choice">Show Data</button>
+          </div>
+          <div id="instruction">
+            <h2>Instruction</h2>
+            <p>The "By Year" option enables selection of a specific</p>
+            <p>year among 5 available yea for displaying the epidemic</p>
+            <p>morbidity of all provinces in China. To explore data of</p>
+            <p>a specific province, please click on the location of that</p>
+            <p>province on the map. Meanwhile, the "By Province" option</p>
+            <p>enables direct selection of the province of interest, and</p>
+            <p>a marker will be placed on the selected province, together</p>
+            <p>with the morbidity information of all years for that province.</p>
+            <p>Due to data accessibility, the data of Hongkong, Macau, and<</p>
+            <p>Taiwan will not be shown on the map.</p>
+          </div>
+          <a class="prev1" onclick="plusSlides(0)">&#10094; Previous</a>
+          <a class="next1" onclick="plusSlides(1)">Next &#10095;</a>
+
+
+        </div>
+      </div>
+
+<!--
+      <div class="slide2">
+          <div class="sidebar">
+            <div id="title">
+              <h1>DYSENTERY MORBIDITY OF PROVINCES IN CHINA</h1>
+            </div>
+          <div id="year">
+            <h2>By Year</h2>
+            <select id="year-selection">
+              <option value="2016">2016</option>
+              <option value="2015"> 2015 </option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+            </select>
+            <button id="year-selection-choice">Show Data</button>
+          </div>
+          <div id="province">
+            <h2>By Province</h2>
+            <select id="province-selection">
+              <option value="Beijing">Beijing</option>
+              <option value="Tianjin">Tianjin</option>
+              <option value="Hebei">Hebei</option>
+              <option value="Shanxi">Shanxi</option>
+              <option value="Neimenggu">Neimenggu</option>
+              <option value="Liaoning">Liaoning</option>
+              <option value="Jilin">Jilin</option>
+              <option value="Heilongjiang">Heilongjiang</option>
+              <option value="Shanghai">Shanghai</option>
+              <option value="Jiangsu">Jiangsu</option>
+              <option value="Zhejiang">Zhejiang</option>
+              <option value="Anhui">Anhui</option>
+              <option value="Fujian">Fujian</option>
+              <option value="Jiangxi">Jiangxi</option>
+              <option value="Shandong">Shandong</option>
+              <option value="Henan">Henan</option>
+              <option value="Hubei">Hubei</option>
+              <option value="Hunan">Hunan</option>
+              <option value="Guangdong">Guangdong</option>
+              <option value="Guangxi">Guangxi</option>
+              <option value="Hainan">Hainan</option>
+              <option value="Chongqing">Chongqing</option>
+              <option value="Sichuan">Sichuan</option>
+              <option value="Guizhou">Guizhou</option>
+              <option value="Yunnan">Yunnan</option>
+              <option value="Xizang">Xizang</option>
+              <option value="Shaanxi">Shaanxi</option>
+              <option value="Gansu">Gansu</option>
+              <option value="Qinghai">Qinghai</option>
+              <option value="Ningxia">Ningxia</option>
+              <option value="Xinjiang">Xinjiang</option>
+            </select>
+            <button id="province-selection-choice">Show Data</button>
+          </div>
+          <div id="instruction">
+            <h2>Instruction</h2>
+            <p>The "By Year" option enables selection of a specific</p>
+            <p>year among 5 available yea for displaying the epidemic</p>
+            <p>morbidity of all provinces in China. To explore data of</p>
+            <p>a specific province, please click on the location of that</p>
+            <p>province on the map. Meanwhile, the "By Province" option</p>
+            <p>enables direct selection of the province of interest, and</p>
+            <p>a marker will be placed on the selected province, together</p>
+            <p>with the morbidity information of all years for that province.</p>
+            <p>Due to data accessibility, the data of Hongkong, Macau, and<</p>
+            <p>Taiwan will not be shown on the map.</p>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+
+
+      <div class="slide3">
+          <div class="sidebar">
+            <div id="title">
+              <h1>HIV MORBIDITY OF PROVINCES IN CHINA</h1>
+            </div>
+          <div id="year">
+            <h2>By Year</h2>
+            <select id="year-selection">
+              <option value="2016">2016</option>
+              <option value="2015"> 2015 </option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+            </select>
+            <button id="year-selection-choice">Show Data</button>
+          </div>
+          <div id="province">
+            <h2>By Province</h2>
+            <select id="province-selection">
+              <option value="Beijing">Beijing</option>
+              <option value="Tianjin">Tianjin</option>
+              <option value="Hebei">Hebei</option>
+              <option value="Shanxi">Shanxi</option>
+              <option value="Neimenggu">Neimenggu</option>
+              <option value="Liaoning">Liaoning</option>
+              <option value="Jilin">Jilin</option>
+              <option value="Heilongjiang">Heilongjiang</option>
+              <option value="Shanghai">Shanghai</option>
+              <option value="Jiangsu">Jiangsu</option>
+              <option value="Zhejiang">Zhejiang</option>
+              <option value="Anhui">Anhui</option>
+              <option value="Fujian">Fujian</option>
+              <option value="Jiangxi">Jiangxi</option>
+              <option value="Shandong">Shandong</option>
+              <option value="Henan">Henan</option>
+              <option value="Hubei">Hubei</option>
+              <option value="Hunan">Hunan</option>
+              <option value="Guangdong">Guangdong</option>
+              <option value="Guangxi">Guangxi</option>
+              <option value="Hainan">Hainan</option>
+              <option value="Chongqing">Chongqing</option>
+              <option value="Sichuan">Sichuan</option>
+              <option value="Guizhou">Guizhou</option>
+              <option value="Yunnan">Yunnan</option>
+              <option value="Xizang">Xizang</option>
+              <option value="Shaanxi">Shaanxi</option>
+              <option value="Gansu">Gansu</option>
+              <option value="Qinghai">Qinghai</option>
+              <option value="Ningxia">Ningxia</option>
+              <option value="Xinjiang">Xinjiang</option>
+            </select>
+            <button id="province-selection-choice">Show Data</button>
+          </div>
+          <div id="instruction">
+            <h2>Instruction</h2>
+            <p>The "By Year" option enables selection of a specific</p>
+            <p>year among 5 available yea for displaying the epidemic</p>
+            <p>morbidity of all provinces in China. To explore data of</p>
+            <p>a specific province, please click on the location of that</p>
+            <p>province on the map. Meanwhile, the "By Province" option</p>
+            <p>enables direct selection of the province of interest, and</p>
+            <p>a marker will be placed on the selected province, together</p>
+            <p>with the morbidity information of all years for that province.</p>
+            <p>Due to data accessibility, the data of Hongkong, Macau, and<</p>
+            <p>Taiwan will not be shown on the map.</p>
+          </div>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+---->
+
+
+  </div>
+
+  </body>
+</html>

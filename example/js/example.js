@@ -11,7 +11,8 @@ var selectValue = 'All';
 // Notice that we've been using an options object since week 1 without realizing it
 var mapOpts = {
   center: [0, 0],
-  zoom: 2
+  zoom: 2,
+  zoomDelta: 3
 };
 var map = L.map('map', mapOpts);
 

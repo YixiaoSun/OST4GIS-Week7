@@ -125,13 +125,25 @@ of the application to report this information.
 
 ===================== */
 
-var dataset = ""
+var dataset = "https://raw.githubusercontent.com/CPLN-692-401/datasets/master/geojson/philadelphia-garbage-collection-boundaries.geojson";
+
 var featureGroup;
 
 var myStyle = function(feature) {
-  return {};
-};
+  switch (feature.properties.COLLDAY){
+    case "MON":
+    return {fillColor:'#D6EAF8'};
+    case "TUE":
+    return {fillColor:'#AED6F1'};
+    case "WED":
+    return {fillColor:'#5DADE2'};
+    case "THU":
+    return {fillColor:'#3498DB'};
+    case "FRI":
+    return {fillColor:'#1B4F72'};
+  }
 
+};
 var showResults = function() {
   /* =====================
   This function uses some jQuery methods that may be new. $(element).hide()
@@ -139,6 +151,8 @@ var showResults = function() {
   from the page. $(element).show() removes "display: none" from an element,
   returning it to the page. You don't need to change this part.
   ===================== */
+/*  $().hide();
+  $().show();*/
   // => <div id="intro" css="display: none">
   $('#intro').hide();
   // => <div id="results">
@@ -148,19 +162,35 @@ var showResults = function() {
 
 var eachFeatureFunction = function(layer) {
   layer.on('click', function (event) {
-    /* =====================
-    The following code will run every time a layer on the map is clicked.
-    Check out layer.feature to see some useful data about the layer that
-    you can use in your application.
-    ===================== */
+    var display;
+    switch(layer.feature.properties.COLLDAY){
+      case "MON": display = "Monday";
+      break;
+      case "TUE": display = "Tuesday";
+      break;
+      case "WED": display = "Wednesday";
+      break;
+      case "THU": display = "Thursday";
+      break;
+      case "FRI": display = "Friday";
+      break;
+    }
+    $(".day-of-week").text(display);
     console.log(layer.feature);
+
     showResults();
   });
 };
 
-var myFilter = function(feature) {
-  return true;
+var myFilter = function(feature){
+  if (feature.properties.COLLDAY===" "){
+    return false;
+  }
+  else{
+    return true;
+  }
 };
+
 
 $(document).ready(function() {
   $.ajax(dataset).done(function(data) {
